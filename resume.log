@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4 Portable) (preloaded format=xelatex 2025.12.14)  15 DEC 2025 05:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4 Portable) (preloaded format=xelatex 2025.12.14)  15 DEC 2025 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -853,15 +853,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
 (resume/highlights.tex
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 25.
+(Font)              scaled to size 9.00096pt on input line 24.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 25.
+(Font)              scaled to size 5.00053pt on input line 24.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 25.
+(Font)              scaled to size 8.99904pt on input line 24.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 25.
+(Font)              scaled to size 4.99947pt on input line 24.
 LaTeX Font Info:    Font shape `TU/Inter(1)/m/sl' in size <8> not available
-(Font)              Font shape `TU/Inter(1)/m/it' tried instead on input line 25.
+(Font)              Font shape `TU/Inter(1)/m/it' tried instead on input line 24.
 ) (resume/experience.tex
 LaTeX Font Info:    Font shape `TU/Inter(1)/m/sl' in size <9> not available
 (Font)              Font shape `TU/Inter(1)/m/it' tried instead on input line 24.
@@ -898,10 +898,10 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  32603 strings out of 402986
  657571 string characters out of 5446225
- 1249807 words of memory out of 5000000
+ 1249808 words of memory out of 5000000
  60791 multiletter control sequences out of 15000+600000
  632337 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  131i,11n,135p,564b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.xdv (1 page, 44844 bytes).
+Output written on resume.xdv (1 page, 44980 bytes).
