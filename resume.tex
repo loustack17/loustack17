@@ -21,7 +21,7 @@
 \documentclass[12pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+\geometry{left=1.2cm, top=.8cm, right=1.2cm, bottom=.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -122,7 +122,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\[-1.5mm]
        \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     % ---- only render description row when #5 is NOT empty ----
     \if\relax\detokenize{#5}\relax\else
@@ -145,6 +145,13 @@
 }{%
     \end{tabular*}
   \end{center}
+}
+
+% ---------------------------------------------------------
+% Adjust cvhonor spacing: add more space between date and award name
+% ---------------------------------------------------------
+\renewcommand*{\cvhonor}[4]{%
+  \honordatestyle{#4} & \hspace{1mm}\honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 
