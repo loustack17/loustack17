@@ -1,18 +1,33 @@
-# About Me
+# Hey, I'm Lou 👋
 
-Hi everyone 😊 I am Lou!
+Backend engineer by training, leaning hard into DevOps now.
 
-Exploring code and systems is my playground—whether optimizing .NET backends or deploying on Azure. It's not just about deadlines; it's the thrill of debugging frustrations and connecting tech dots that fuels my curiosity. As a lifelong learner, I form strong opinions on tools like CI/CD pipelines and refactor legacy stacks, refining them with every project.
+I started on the app side — .NET APIs, SQL optimization, keeping brownfield systems alive. These days I'm more interested in the *how it ships and stays alive* part: CI/CD pipelines, self-hosted GitLab, production incident response, cloud infrastructure. That's where I'm growing, and that's where I want to go.
 
-## Professionally
+Based in Toronto. Aiming for the DevOps → SRE path.
 
-- Building scalable .NET APIs and services, slashing query times from 5 min to 4 sec via SQL optimizations and EF Core for healthcare and finance platforms.
-- Deploying on Azure App Service with DevOps CI/CD, reducing deployment times by 30 min and boosting reliability by 40% across biotech and B2B clients.
-- Maintaining legacy ASP.NET (MVC/WebForms) systems, refactoring to cut incidents by 30% and support 4+ projects in high-stakes environments.
-- Early exposure to frontend (Angular/JS) and databases (SQL Server/PostgreSQL), evolving into full-stack backend focus with Docker and Entity Framework.
+## 🛠️ Where I live now
 
-## Personally
+```
+CI/CD        →  Azure DevOps, GitLab CI (self-hosted runners), Docker, Shell scripting
+Cloud        →  AWS (EC2, S3, RDS), Azure App Service, Linux (CentOS / RHEL)
+Backend      →  C#, .NET (ASP.NET Core / MVC), SQL Server, PostgreSQL
+Monitoring   →  Production incident triage, uptime-focused debugging
+```
 
-- Diving into quirky gadgets? Always hunting the latest software plugins, 3C tech toys, or hidden gems that spark innovation—my desk is a mini lab of experiments.
-- Fueling up with exactly 2 cups of coffee daily, black, bold, and non-negotiable—it's my ritual for cracking tough code puzzles.
-- Mid-tier FPS and survival game enthusiast—strategising escapes in Delta Force or headshots in Valorant keeps my reflexes sharp between deploys.
+## 💡 What I've actually done
+
+- **CI/CD & deployment** — Built and maintained pipelines on Azure DevOps + self-hosted GitLab CE. Cut release prep by 30+ min. Managed runner availability and resolved pipeline failures.
+- **Infrastructure** — Set up AWS (EC2, S3, RDS) for production. Administered GitLab on CentOS VMs + Docker. Contributed to RHEL migration planning.
+- **Production reliability** — Responded to live incidents across healthcare, finance, and biotech. Optimized a critical reporting workflow from **3 min → 4 sec** by moving logic to stored procedures.
+- **Brownfield systems** — Maintained 4+ .NET production platforms. Delivered features through safe, incremental refactoring without service disruption.
+
+## ☕ When I'm not on-call
+
+- Exactly 2 cups of black coffee a day. Non-negotiable. Load-bearing, even.
+- Mid-tier FPS player — Valorant keeps the reflexes sharp between deploys
+- Always tinkering with gadgets and software plugins. My desk is basically a mini lab.
+
+---
+
+📍 Toronto, ON &nbsp;|&nbsp; ☁️ AZ-900 Certified &nbsp;|&nbsp; 🌐 [loulazynote.github.io](https://loulazynote.github.io)
