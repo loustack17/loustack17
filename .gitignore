@@ -5,3 +5,9 @@ resume.xdv
 resume.aux
 resume.out
 
+Invoice/simple_invoice_template.xdv
+Invoice/simple_invoice_template.fdb_latexmk
+Invoice/simple_invoice_template.fls
+Invoice/simple_invoice_template.log
+Invoice/simple_invoice_template.out
+indent.log
