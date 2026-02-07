@@ -1,0 +1,16 @@
+[
+  {
+    "label": "XeLaTeX Build",
+    "command": "latexmk",
+    "args": [
+      "-xelatex",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "$ZED_FILENAME"
+    ],
+    "cwd": "$ZED_DIRNAME",
+    "tags": [
+      "latex-build"
+    ]
+  }
+]

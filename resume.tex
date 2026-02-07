@@ -40,8 +40,8 @@
 \definecolor{lighttext}{HTML}{5A5A5A}
 
 
-\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
-\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{text} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfontlight\color{graytext} #1}}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -82,6 +82,7 @@
 %-------------------------------------------------------------------------------
 % Section spacing (compact but readable)
 %-------------------------------------------------------------------------------
+\renewcommand{\acvHeaderAfterSocialSkip}{2mm}
 \renewcommand{\acvSectionTopSkip}{1.5mm}
 \renewcommand{\acvSectionContentTopSkip}{1mm}
 
@@ -98,12 +99,12 @@
 % Location
 \renewcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 % Bullet point descriptions
-\renewcommand*{\descriptionstyle}[1]{{\fontsize{9.5pt}{1.15em}\bodyfontlight\upshape\color{text} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
 % Section titles
-\renewcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\renewcommand*{\sectionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 % Skills
-\renewcommand*{\skilltypestyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\renewcommand*{\skillsetstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfontlight\color{text} #1}}
+\renewcommand*{\skilltypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
 % Header position (your title line)
 \renewcommand*{\headerpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 % Header address
@@ -117,7 +118,7 @@
 \renewenvironment{cvitems}{%
   \vspace{-3.0mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, itemsep=0.5mm]
+  \begin{itemize}[leftmargin=2ex, nosep, itemsep=0.2mm]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
@@ -132,9 +133,9 @@
 \newenvironment{cvhighlightitems}{%
   \vspace{-3.5mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, itemsep=1mm]
+  \begin{itemize}[leftmargin=2ex, nosep, itemsep=0.3mm]
     \setlength{\parskip}{0pt}
-    \linespread{1.1}\selectfont
+    \linespread{1.05}\selectfont
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
@@ -147,7 +148,7 @@
 % Source: TeX StackExchange / Awesome-CV community
 % ---------------------------------------------------------
 \renewcommand*{\cventry}[5]{%
-  \vspace{-0.5mm}%
+  \vspace{-1.0mm}%
   \setlength\tabcolsep{0pt}%
   \setlength{\extrarowheight}{0pt}%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -205,10 +206,8 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-% \input{resume/summary.tex}
 \input{resume/highlights.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
 % \input{resume/presentation.tex}
 % \input{resume/writing.tex}
 % \input{resume/committees.tex}
