@@ -30,4 +30,5 @@ Monitoring   →  Production incident triage, uptime-focused debugging
 
 ---
 
-📍 Toronto, ON &nbsp;|&nbsp; ☁️ AZ-900 Certified &nbsp;|&nbsp; 🌐 [loulazynote.github.io](https://loulazynote.github.io)
+📍 Toronto, ON &nbsp;|&nbsp; ☁️ AZ-900 Certified &nbsp;|&nbsp; 🌐 [loustack17.github.io](https://loustack17.github.io)
+
