@@ -30,5 +30,6 @@ Monitoring   →  Production incident triage, uptime-focused debugging
 
 ---
 
-📍 Toronto, ON &nbsp;|&nbsp; ☁️ AZ-900 Certified &nbsp;|&nbsp; 🌐 [loustack17.github.io](https://loustack17.github.io)
+📍 Toronto, ON &nbsp;|&nbsp; ☁️ AZ-900 Certified &nbsp;|&nbsp; 🌐 [loustack.dev](https://loustack.dev)
+
 
