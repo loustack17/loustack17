@@ -14,10 +14,10 @@
 #show text.where(size: 10pt, weight: "medium", style: "italic"): set text(size: 0.1pt, fill: white)
 #show text.where(size: 8pt, weight: "medium", fill: gray, style: "oblique"): set text(fill: rgb("#5B6572"))
 
-#let import-modules(modules, lang: metadata.language) = {
+#let import-modules(modules) = {
   for module in modules {
     include {
-      "modules_" + lang + "/" + module + ".typ"
+      "modules/" + module + ".typ"
     }
   }
 }
@@ -25,6 +25,7 @@
 #show: cv.with(metadata)
 
 #import-modules((
+  "header",
   "highlights",
   "professional",
   "education",

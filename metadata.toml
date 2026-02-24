@@ -50,5 +50,5 @@ language = "en"
     letter_footer = "求職信"
 
 [lang.non_latin]
-    name = "張樓"
+    name = ""
     font = "Heiti SC"

@@ -12,5 +12,21 @@
     "tags": [
       "latex-build"
     ]
+  },
+  {
+    "label": "Typst Build (GitHub PDF Compatible)",
+    "command": "typst",
+    "args": [
+      "compile",
+      "cv.typ",
+      "resume.pdf",
+      "--pdf-standard",
+      "1.5",
+      "--no-pdf-tags"
+    ],
+    "cwd": "$ZED_DIRNAME",
+    "tags": [
+      "typst-build"
+    ]
   }
 ]
