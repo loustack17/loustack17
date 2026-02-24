@@ -14,15 +14,11 @@
     ]
   },
   {
-    "label": "Typst Build (GitHub PDF Compatible)",
-    "command": "typst",
+    "label": "Typst Build (Firefox/GitHub Compatible)",
+    "command": "bash",
     "args": [
-      "compile",
-      "cv.typ",
-      "resume.pdf",
-      "--pdf-standard",
-      "1.5",
-      "--no-pdf-tags"
+      "-lc",
+      "typst compile cv.typ /tmp/resume_typst.pdf --pdf-standard 1.5 --no-pdf-tags && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dBATCH -dQUIET -dDetectDuplicateImages=true -dCompressFonts=true -dSubsetFonts=true -dEmbedAllFonts=true -sOutputFile=resume.pdf /tmp/resume_typst.pdf"
     ],
     "cwd": "$ZED_DIRNAME",
     "tags": [
