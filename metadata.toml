@@ -1,0 +1,54 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+language = "en"
+
+[layout]
+    awesome_color = "#2C3E50"
+
+    before_section_skip = "0pt"
+    before_entry_skip = "0pt"
+    before_entry_description_skip = "0pt"
+
+    paper_size = "us-letter"
+    font_size = "8.8pt"
+
+    [layout.fonts]
+        regular_fonts = ["Inter"]
+        header_font = "Roboto"
+
+    [layout.header]
+        header_align = "center"
+        display_profile_photo = false
+        profile_photo_radius = "50%"
+        info_font_size = "0.1pt"
+
+    [layout.entry]
+        display_entry_society_first = true
+        display_logo = false
+
+    [layout.footer]
+        display_page_counter = false
+        display_footer = false
+
+[inject]
+    inject_ai_prompt = false
+    inject_keywords = true
+    injected_keywords_list = ["DevOps", "CI/CD", "Azure DevOps", "GitLab CI", "GitHub Actions", "AWS", "Terraform", "Docker", "Linux", "Backend Engineer"]
+
+[personal]
+    first_name = ""
+    last_name = ""
+
+    [personal.info]
+
+[lang.en]
+    cv_footer = "Curriculum vitae"
+    letter_footer = "Cover letter"
+
+[lang.zh]
+    cv_footer = "履歷"
+    letter_footer = "求職信"
+
+[lang.non_latin]
+    name = "張樓"
+    font = "Heiti SC"
