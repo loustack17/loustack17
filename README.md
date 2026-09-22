@@ -12,7 +12,7 @@ At Duotify, I contributed to 20+ client engagements across healthcare, finance, 
 
 Selected examples:
 
-- **Healthcare:** Reduced three administration workflows from 5–8 minutes and frequent timeouts to about 5 seconds, with the fastest around 0.4 seconds, by moving expensive multi-table processing into SQL Server stored procedures, views, and functions.
+- **Emergency medicine association platform:** Reduced three administration workflows from 5–8 minutes and frequent timeouts to about 5 seconds, with the fastest around 0.4 seconds, by moving expensive multi-table processing into SQL Server stored procedures, views, and functions.
 - **Finance:** Took over a 40–50 API backend mid-project, delivered additional APIs, and built the company's first AWS development and test environment so the team could develop and verify changes without relying on restricted client access.
 - **Developer infrastructure:** Maintained GitLab CE and CI/CD infrastructure used by about 100–150 engineers across multiple runner environments, including upgrade validation and routine Linux automation.
 
