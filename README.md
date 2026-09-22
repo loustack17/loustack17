@@ -8,7 +8,7 @@ A lot of my work has involved problems that cross more than one layer of a syste
 
 Much of my professional experience came from consulting and client delivery.
 
-At Duotify, I contributed to 20+ client engagements across healthcare, finance, retail, B2B, public-sector services, and internal engineering infrastructure, while concurrently maintaining 12–14 active projects.
+At Duotify, I contributed to 20+ client engagements across an emergency medicine association platform, finance, retail, B2B, public-sector services, and internal engineering infrastructure, while concurrently maintaining 12–14 active projects.
 
 Selected examples:
 
