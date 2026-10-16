@@ -26,18 +26,6 @@
     ]
   },
   {
-    "label": "Typst Build (Full Stack Resume)",
-    "command": "bash",
-    "args": [
-      "-lc",
-      "typst compile cv.typ /tmp/resume_fullstack_typst.pdf --input target=fullstack --pdf-standard 1.5 --no-pdf-tags && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dBATCH -dQUIET -dDetectDuplicateImages=true -dCompressFonts=true -dSubsetFonts=true -dEmbedAllFonts=true -sOutputFile=resume-fullstack.pdf /tmp/resume_fullstack_typst.pdf"
-    ],
-    "cwd": "$ZED_DIRNAME",
-    "tags": [
-      "typst-build"
-    ]
-  },
-  {
     "label": "Typst Build (Backend Resume)",
     "command": "bash",
     "args": [
@@ -50,11 +38,23 @@
     ]
   },
   {
-    "label": "Typst Build (DevOps / Platform Resume)",
+    "label": "Typst Build (Enterprise .NET Resume)",
     "command": "bash",
     "args": [
       "-lc",
-      "typst compile cv.typ /tmp/resume_devops_typst.pdf --input target=devops --pdf-standard 1.5 --no-pdf-tags && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dBATCH -dQUIET -dDetectDuplicateImages=true -dCompressFonts=true -dSubsetFonts=true -dEmbedAllFonts=true -sOutputFile=resume-devops.pdf /tmp/resume_devops_typst.pdf"
+      "typst compile cv.typ /tmp/resume_enterprise_typst.pdf --input target=enterprise --pdf-standard 1.5 --no-pdf-tags && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dBATCH -dQUIET -dDetectDuplicateImages=true -dCompressFonts=true -dSubsetFonts=true -dEmbedAllFonts=true -sOutputFile=resume-enterprise.pdf /tmp/resume_enterprise_typst.pdf"
+    ],
+    "cwd": "$ZED_DIRNAME",
+    "tags": [
+      "typst-build"
+    ]
+  },
+  {
+    "label": "Typst Build (Platform Resume)",
+    "command": "bash",
+    "args": [
+      "-lc",
+      "typst compile cv.typ /tmp/resume_platform_typst.pdf --input target=platform --pdf-standard 1.5 --no-pdf-tags && gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dBATCH -dQUIET -dDetectDuplicateImages=true -dCompressFonts=true -dSubsetFonts=true -dEmbedAllFonts=true -sOutputFile=resume-platform.pdf /tmp/resume_platform_typst.pdf"
     ],
     "cwd": "$ZED_DIRNAME",
     "tags": [

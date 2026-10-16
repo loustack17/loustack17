@@ -1,78 +1,71 @@
 headline: >-
-  Backend Engineer | APIs, Data Systems & Cloud Infrastructure
+  Backend Engineer | APIs, SQL & Cloud Infrastructure
 summary: >-
-  Backend engineer with 5+ years building and stabilizing API and data systems across healthcare,
-  finance, B2B, and legal workflows. Combines .NET/SQL depth with Python/FastAPI, Terraform, CI/CD, and
-  AWS/Google Cloud delivery. Strongest where application behavior, database performance, and delivery
-  infrastructure meet—cutting critical administration workflows from 5–8 minutes to 5 seconds (fastest
-  0.4s) and removing client-access bottlenecks for a 40–50 API financial platform.
+  Backend engineer with 5+ years maintaining multi-client web systems and APIs. Strongest work is in
+  .NET and SQL Server: API design, SQL performance, and production debugging across application and
+  data layers. Recent contract work adds Python/FastAPI, Legal AI document automation, and
+  Terraform-managed cloud delivery.
 experience:
-  - title: "Software Engineer — Backend & Cloud Infrastructure (Contract)"
+  - title: "Software Engineer - Backend & Cloud Infrastructure (Contract)"
     company: "Independent Consulting"
     date: "Sep. 2024 - Present"
     location: "Toronto, ON"
     bullets:
-      - >-
-        Reworked a prototype into a maintainable FastAPI backend by separating domain, API, persistence,
-        and provider boundaries, with SQLAlchemy/Alembic persistence, Shopify onboarding, and quality
-        gates.
-      - >-
-        Built dynamic template rendering for Ontario Form 13.1 by cloning and reindexing template rows,
-        preserving copied-row formatting while supporting variable-length financial and property data
-        without manual row creation; added behavior-focused transform tests.
-      - >-
-        Built a Terraform deployment path on Google Cloud with Cloud Run, Cloud SQL, Secret Manager,
-        GitHub Actions Workload Identity Federation, and Cloud Monitoring, replacing an EC2 host, NGINX,
-        and Let's Encrypt with managed services while separating development and production resources.
+      - label: "Backend refactor"
+        text: >-
+          Reworked a FastAPI prototype into domain modules for API, persistence, and providers; added
+          SQLAlchemy repositories, Alembic migrations, Shopify OAuth onboarding, validation, and tests.
+      - label: "Legal AI document automation"
+        text: >-
+          Added dynamic DOCX rows for variable-length financial/property records in Ontario Form 13.1,
+          reducing manual Word edits; reindexed fields, preserved court formatting, and added FormKit/YAML
+          regression tests.
   - title: "Web Development Engineer"
     company: "Duotify Inc."
     date: "Jun. 2020 - Jan. 2024"
     location: "Taipei, Taiwan"
+    intro: >-
+      Maintained about 12-14 client projects concurrently and worked across 20+ over the role. The
+      examples below are selected, separate client systems.
     bullets:
-      - >-
-        During annual conference registration season, cut accounting, event, and membership
-        administration workflows from 5-8 minutes to 5 seconds, fastest 0.4 seconds, on a healthcare
-        platform serving about 3,000 members by replacing multi-table LINQ embedded in AutoMapper with
-        SQL Server procedures, views, and functions.
-      - >-
-        Built the company's first AWS development and test environment for a 40-50 API financial
-        platform, removing dependency on restricted client access and enabling local verification before
-        delivering 4-5 APIs and completing on-site acceptance.
-      - >-
-        Designed 20-30 REST APIs for a greenfield local-business marketing platform with JWT
-        authentication and transaction-protected data consistency, establishing NSwag-documented
-        contracts and Docker-based SQL Server development for frontend integration.
-      - >-
-        Operated and improved bank-wide self-hosted GitLab CE serving about 100-150 engineers; built a
-        production-like test environment to validate upgrades and automated log cleanup and routine
-        maintenance with Bash and Cron.
-      - >-
-        Mitigated a week-long traffic and scraper incident on a top-three Taiwan used-car marketplace
-        with 50-70k monthly visits by using Azure Monitor to identify App Service saturation,
-        configuring autoscaling, and supporting temporary traffic rerouting.
+      - label: "Emergency medicine association website & member system"
+        text: >-
+          During annual conference registration, cut accounting, event, and membership admin workflows
+          for about 3,000 members from 5-8 minutes/timeouts to about 5 seconds (fastest 0.4) by moving
+          multi-table LINQ/AutoMapper logic into SQL Server procedures, views, and functions.
+      - label: "Cathay Financial Holdings internal platform"
+        text: >-
+          Took over a 40-50 API .NET 5 system mid-project, built the company's first AWS dev/test
+          environment under restricted client access, and delivered 4-5 APIs through on-site acceptance.
+      - label: "Local-business platform"
+        text: >-
+          Built 20-30 .NET 5 REST APIs for a greenfield coupon, merchant, and membership platform; used
+          JWT/database transactions and coordinated NSwag contracts with an Angular 12 frontend engineer.
+      - label: "Top-three Taiwan used-car marketplace"
+        text: >-
+          Helped restore service during a week-long traffic/scraper incident (50-70k monthly visits) by
+          tracing App Service saturation in Azure Monitor and configuring autoscaling while the team
+          rerouted traffic.
   - title: "ERP Applications Engineer"
     company: "Unitech Computer Co., Ltd."
     date: "Mar. 2019 - May 2020"
     location: "Taipei, Taiwan"
     bullets:
-      - >-
-        Maintained product search, inventory, quotation, order, and member workflows for a nationwide
-        B2B platform used by resellers, enterprise procurement teams, and internal sales across
-        AngularJS, ASP.NET MVC, Oracle, SQL Server, and PostgreSQL.
-      - >-
-        Resolved production defects, long-standing bugs, and data-query issues across the legacy web and
-        multi-database stack, sustaining daily ordering operations under active business use.
-      - >-
-        Built an Angular 8 and ASP.NET MVC 5 modernization PoC with NG-ZORRO and presented it to the ERP
-        engineering department as a reference for updating the legacy AngularJS interface.
-projects: []
+      - label: "B2B ordering & modernization"
+        text: >-
+          Maintained a nationwide AngularJS/ASP.NET MVC ordering platform across SQL Server, PostgreSQL,
+          and Oracle; fixed production/data issues and built an Angular 8/MVC 5 modernization PoC.
+projects:
+  - title: "content-i18n"
+    subtitle: "Go Translation Orchestration"
+    text: >-
+      Built a Go translation tool with CLI/MCP, translation queues, batch processing, DeepL/Google
+      adapters, and validation for document structure, code blocks, links, and leftover source-language
+      text.
 skills:
   - category: "Backend & Data"
-    items: >-
-      Python, FastAPI, C#, .NET, Microsoft SQL Server, PostgreSQL, Oracle Database, SQLAlchemy
-  - category: "APIs & Quality"
-    items: >-
-      REST APIs, OpenAPI / NSwag, JWT, pytest, Pyright, Ruff, Docker
-  - category: "Cloud & Delivery"
-    items: >-
-      AWS, Google Cloud, Cloud Run, Terraform, GitHub Actions, GitLab CE, Workload Identity Federation
+    items: "Python/FastAPI, C#/.NET, SQL Server, PostgreSQL, Oracle, SQLAlchemy"
+  - category: "APIs & Delivery"
+    items: "REST APIs, OpenAPI/NSwag, JWT, Docker, AWS, GCP, Terraform, GitHub Actions"
+  - category: "Operations"
+    items: "Azure Monitor, CloudWatch, GitLab CE, Linux, Bash"

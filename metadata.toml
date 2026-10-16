@@ -1,11 +1,11 @@
 language = "en"
-default_target = "fullstack"
-targets = ["backend", "fullstack", "devops"]
+default_target = "backend"
+targets = ["backend", "enterprise", "platform"]
 
 [render]
 paper_size = "us-letter"
 font = "Helvetica Neue"
-font_size = 8.6
+font_size = 10.5
 payload_directory = "payloads"
 
 [shared]
@@ -16,7 +16,8 @@ first = "Lou"
 last = "Chang"
 
 [shared.contact]
-email = "louchang.dev@outlook.com"
+email = "louchang@loustack.dev"
+# phone = "(647) 686-7427"  # uncomment to show a phone number; this repo is public
 website = "https://loustack.dev"
 website-label = "loustack.dev"
 github = "https://github.com/loustack17"
@@ -27,13 +28,13 @@ linkedin-label = "lou-chang"
 [[shared.education]]
 school = "Seneca Polytechnic"
 credential = "Diploma, Computer Programming"
-date = "May 2024 - Aug. 2025"
+date = "Aug. 2025"
 location = "Toronto, Canada"
 
 [[shared.education]]
 school = "Hwa Hsia University of Technology"
 credential = "Bachelor's, Information Management"
-date = "Sep. 2018 - Jun. 2020"
+date = "Jun. 2020"
 location = "New Taipei City, Taiwan"
 
 [[shared.education]]

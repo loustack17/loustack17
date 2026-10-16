@@ -1,61 +1,36 @@
+// Shared styles for the 202609 resume layout.
+// Weights follow the reference PDFs: Light body, Medium dates, Bold titles.
+#let ink = rgb("#141b28")
+#let navy = rgb("#2c3e50")
+#let muted = rgb("#697482")
+
 #let section-title(title) = {
-  v(2pt)
-  box(height: 12pt)[#text(size: 15.5pt, weight: "bold", fill: rgb("#2C3E50"), title)]
-  v(-4pt)
+  v(7pt)
+  text(size: 15.5pt, weight: "bold", fill: navy, title)
+  v(-3.5pt)
   line(length: 100%, stroke: 0.5pt + rgb("#D7DEE8"))
-  v(-2.5pt)
+  v(3pt)
 }
 
-#let compact-entry(title, society, date, location, bullets) = {
-  table(
-    columns: (1fr, 31%),
-    inset: 0pt,
-    stroke: none,
-    gutter: 6pt,
-    table(columns: (1fr,), inset: 0pt, stroke: none, row-gutter: 3pt, text(size: 9.8pt, weight: "bold", title), text(size: 8.3pt, fill: rgb("#5B6572"), society)),
-    table(columns: (1fr,), inset: 0pt, stroke: none, row-gutter: 3pt, align: right, text(size: 8.3pt, style: "oblique", location), text(size: 8.3pt, fill: rgb("#5B6572"), style: "oblique", date)),
+// Title + location on the first row, organisation/credential + date on the second.
+#let entry-header(title, sub, date, location, title-size: 10.8pt) = {
+  grid(
+    columns: (1fr, auto),
+    row-gutter: 3pt,
+    align: (left, right),
+    text(size: title-size, weight: "bold", title), text(size: 9.5pt, weight: "light", location),
+    text(size: 9.5pt, weight: "light", fill: muted, sub), text(size: 9.5pt, weight: "medium", fill: muted, date),
   )
-  v(-3pt)
-  bullets
-  v(-4pt)
+  v(-1pt)
 }
 
-#let education-entry(society, degree, date, location) = {
-  table(
-    columns: (1fr, 32%),
-    inset: 0pt,
-    stroke: none,
-    gutter: 6pt,
-    align: (x, y) => if x == 1 { right } else { auto },
-    table(
-      columns: (1fr,),
-      inset: 0pt,
-      stroke: none,
-      row-gutter: 3pt,
-      text(size: 9.3pt, weight: "bold", society),
-      text(size: 8pt, fill: rgb("#5B6572"), degree),
-    ),
-    table(
-      columns: (1fr,),
-      inset: 0pt,
-      stroke: none,
-      row-gutter: 3pt,
-      align: right,
-      text(size: 8pt, weight: "medium", style: "oblique", location),
-      text(size: 8pt, weight: "medium", fill: rgb("#5B6572"), style: "oblique", date),
-    ),
-  )
-  v(-4pt)
-}
+// "Label - text" bullet. The label carries the context, the text carries scale and impact.
+#let labeled-bullet(label, body) = [#text(weight: "bold")[#label -] #body]
 
-#let tech-row(type, info) = {
-  table(
-    columns: (18%, 1fr),
-    inset: 0pt,
-    column-gutter: 5pt,
-    stroke: none,
-    text(size: 8.1pt, weight: "bold", type),
-    text(size: 8.1pt, info),
+#let tech-row(category, items) = {
+  grid(
+    columns: (106pt, 1fr),
+    text(size: 9.8pt, weight: "bold", category),
+    text(size: 9.8pt, items),
   )
-  v(-7.8pt)
 }

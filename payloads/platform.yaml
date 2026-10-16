@@ -1,0 +1,71 @@
+headline: >-
+  Software Engineer | Cloud Infrastructure, Terraform & CI/CD
+summary: >-
+  Software engineer with 5+ years supporting production web systems across cloud infrastructure,
+  CI/CD, Linux, and databases. Recent work includes Terraform-managed AWS/GCP delivery, GitHub Actions
+  identity, and a GitOps-managed Kubernetes foundation for an AI-platform portfolio. Earlier work
+  includes CTBC Bank GitLab and Cathay Financial Holdings AWS environments.
+experience:
+  - title: "Cloud Infrastructure & Backend Engineer (Contract)"
+    company: "Independent Consulting"
+    date: "Sep. 2024 - Present"
+    location: "Toronto, ON"
+    bullets:
+      - label: "AWS infrastructure"
+        text: >-
+          Built Terraform-managed AWS infrastructure with EC2, S3 remote state, IAM/OIDC, Docker
+          Compose, GHCR, and CloudWatch health/log checks.
+      - label: "GCP deployment"
+        text: >-
+          Moved an AWS EC2/NGINX deployment to Cloud Run, Cloud SQL, Artifact Registry, and Secret
+          Manager; separated dev/prod resources and added managed SSL and monitoring.
+      - label: "CI/CD identity"
+        text: >-
+          Changed GitHub Actions from AWS OIDC to GCP Workload Identity Federation, moved sensitive
+          configuration to Secret Manager, tightened IAM, and added branch/ref/concurrency controls.
+  - title: "Web Development Engineer"
+    company: "Duotify Inc."
+    date: "Jun. 2020 - Jan. 2024"
+    location: "Taipei, Taiwan"
+    intro: >-
+      Maintained about 12-14 client projects concurrently and worked across 20+ over the role. The
+      examples below are selected, separate client systems.
+    bullets:
+      - label: "Cathay Financial Holdings internal platform"
+        text: >-
+          Built the company's first AWS dev/test environment for a 40-50 API .NET 5 system with IAM,
+          EC2, S3, RDS, Lambda, and SAM CLI; enabled local verification without client VPN access and
+          delivered 4-5 APIs through on-site acceptance.
+      - label: "CTBC Bank GitLab platform"
+        text: >-
+          Maintained GitLab CE for 100-150 engineers across Linux, Windows, macOS, and mobile runners;
+          built a production-like upgrade test environment and automated log cleanup and routine
+          maintenance with Bash and Cron.
+      - label: "Top-three Taiwan used-car marketplace"
+        text: >-
+          Helped restore service during a week-long traffic/scraper incident (50-70k monthly visits) by
+          tracing App Service saturation in Azure Monitor and configuring autoscaling while the team
+          rerouted traffic.
+  - title: "ERP Applications Engineer"
+    company: "Unitech Computer Co., Ltd."
+    date: "Mar. 2019 - May 2020"
+    location: "Taipei, Taiwan"
+    bullets:
+      - label: "B2B and legacy systems"
+        text: >-
+          Maintained a nationwide ordering platform and legacy accounting system across ASP.NET
+          MVC/AngularJS, SQL Server, PostgreSQL, and Oracle; fixed production defects and data-query
+          issues.
+projects:
+  - title: "AI Platform Portfolio"
+    subtitle: "GCP, Kubernetes & GitOps"
+    text: >-
+      Built a GitOps-managed Kubernetes foundation on GCP with Terraform/OpenTofu, Workload Identity
+      Federation, GitHub Actions, Argo CD, traceable image tags, and Kubernetes failure modeling.
+skills:
+  - category: "Cloud & IaC"
+    items: "AWS, EC2, S3, RDS, Terraform/OpenTofu, GCP, Cloud Run, Cloud SQL"
+  - category: "CI/CD & GitOps"
+    items: "GitHub Actions, Workload Identity Federation, GitLab CE/CI, Argo CD"
+  - category: "Systems & Ops"
+    items: "Kubernetes, Docker, Docker Compose, Linux, Bash, Cron, CloudWatch, Azure Monitor"

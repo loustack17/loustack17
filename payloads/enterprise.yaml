@@ -1,0 +1,71 @@
+headline: >-
+  Enterprise Backend Engineer | C#, .NET, SQL Server & Azure
+summary: >-
+  Enterprise backend engineer with 5+ years maintaining .NET and SQL Server systems across finance,
+  member services, retail, and B2B. Work includes REST APIs, SQL performance tuning, brownfield
+  production debugging, and Azure support. Recent contract work adds Python/FastAPI backend
+  architecture and document automation for a Legal AI product.
+experience:
+  - title: "Software Engineer - Backend & Cloud Infrastructure (Contract)"
+    company: "Independent Consulting"
+    date: "Sep. 2024 - Present"
+    location: "Toronto, ON"
+    bullets:
+      - label: "Backend refactor"
+        text: >-
+          Reworked a FastAPI prototype into domain modules for API, persistence, and providers; added
+          SQLAlchemy repositories, Alembic migrations, Shopify OAuth onboarding, validation, and tests.
+      - label: "Legal AI document automation"
+        text: >-
+          Added dynamic DOCX rows for variable-length financial/property records in Ontario Form 13.1,
+          reducing manual Word edits; reindexed fields, preserved court formatting, and added FormKit/YAML
+          regression tests.
+  - title: "Web Development Engineer"
+    company: "Duotify Inc."
+    date: "Jun. 2020 - Jan. 2024"
+    location: "Taipei, Taiwan"
+    intro: >-
+      Maintained about 12-14 client projects concurrently and worked across 20+ over the role. The
+      examples below are selected, separate client systems.
+    bullets:
+      - label: "Emergency medicine association website & member system"
+        text: >-
+          Maintained the Vue.js/ASP.NET MVC/SQL Server stack end to end. During annual conference
+          registration, cut admin workflows for about 3,000 members from 5-8 minutes/timeouts to about 5
+          seconds (fastest 0.4) by moving multi-table LINQ/AutoMapper logic into stored procedures, views,
+          and functions.
+      - label: "Cathay Financial Holdings internal platform"
+        text: >-
+          Took over a 40-50 API .NET 5 system mid-project under restricted client access, built the
+          company's first AWS dev/test environment, and delivered 4-5 APIs through on-site acceptance.
+      - label: "Local-business platform"
+        text: >-
+          Built 20-30 .NET 5 REST APIs for a greenfield coupon, merchant, and membership platform with
+          JWT, SQL Server transactions, NSwag contracts, and Angular 12 integration.
+      - label: "TOTO Taiwan POS"
+        text: >-
+          On a .NET MVC/SQL Server POS used across 60+ stores, traced recurring missing-order reports on
+          high-value orders to order-state filters rather than data loss and corrected rules hiding
+          valid orders.
+      - label: "Top-three Taiwan used-car marketplace"
+        text: >-
+          Helped restore service during a week-long traffic/scraper incident (50-70k monthly visits) by
+          tracing Azure App Service saturation in Azure Monitor and configuring autoscaling while the
+          team rerouted traffic.
+  - title: "ERP Applications Engineer"
+    company: "Unitech Computer Co., Ltd."
+    date: "Mar. 2019 - May 2020"
+    location: "Taipei, Taiwan"
+    bullets:
+      - label: "B2B ordering & modernization"
+        text: >-
+          Maintained a nationwide AngularJS/ASP.NET MVC ordering platform across SQL Server, PostgreSQL,
+          and Oracle; fixed production/data issues and built an Angular 8/MVC 5 modernization PoC.
+projects: []
+skills:
+  - category: "Backend & Data"
+    items: "C#, .NET 5/6, ASP.NET MVC, SQL Server, Azure SQL Database, PostgreSQL, Oracle"
+  - category: "APIs & Integration"
+    items: "REST APIs, OpenAPI/NSwag, JWT, LINQ, AutoMapper, Docker"
+  - category: "Cloud & Operations"
+    items: "Azure App Service, Azure Monitor, Azure DevOps, AWS, GCP, Terraform, GitHub Actions"
