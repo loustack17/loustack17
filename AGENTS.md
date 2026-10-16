@@ -32,6 +32,8 @@ Truth policy:
 
 File roles:
 - Edit `payloads/<target>.yaml` for content and `metadata.toml` for shared header/education. `modules/resume.typ` and `modules/styles.typ` hold the layout.
+- `letter.typ` and `payloads/letter.yaml` are the cover letter template. Fill `company` and `role` with `--input`, and keep claims consistent with the resume payloads.
+- `docs/agents/*-resume-reviewer.md` are the review prompts for each variant.
 - Retired modules and their old wording live in `archive/legacy-modules/` as reference only. Do not use them as a source of facts.
 - `archive/` holds retired modules and the previous resumes (LaTeX, Markdown, devops/fullstack PDFs). Reference only; do not edit.
 - Treat `README.md` as GitHub profile content, not resume content.

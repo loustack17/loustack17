@@ -1,0 +1,28 @@
+# Cover letter template. Fill company and role with `--input company=... --input role=...`.
+# Keep every claim consistent with payloads/*.yaml and the Verified facts in AGENTS.md.
+headline: >-
+  Software Engineer | Backend, SQL & Cloud Infrastructure
+recipient: Hiring Manager
+subject: "Application: {role}"
+paragraphs:
+  - >-
+    I am applying for the {role} position at {company}. I am a backend engineer in Toronto with 5+ years
+    of experience maintaining .NET and SQL Server systems, plus recent contract work in Python/FastAPI and
+    Terraform-managed AWS and GCP delivery.
+  - >-
+    Most of my experience comes from Duotify, a project-based consultancy where I maintained about 12-14
+    client systems at a time. On an emergency medicine association's member system, admin workflows for
+    about 3,000 members were timing out during annual conference registration. I moved the multi-table
+    query logic into SQL Server procedures, views, and functions, which brought those workflows from 5-8
+    minutes to about 5 seconds. On a 40-50 API financial platform that I took over mid-project, I built
+    the company's first AWS dev/test environment so the team could keep developing without access to the
+    client's environment, and I delivered 4-5 APIs through on-site acceptance.
+  - >-
+    Since 2024 I have worked as an independent contractor. I reworked a FastAPI prototype into domain
+    modules with SQLAlchemy and Alembic, added dynamic rows to Ontario court-form DOCX generation, and
+    built Terraform-managed AWS infrastructure that I later moved to Cloud Run, Cloud SQL, and Workload
+    Identity Federation on GCP.
+  - >-
+    I would like to bring this mix of application and infrastructure experience to {company}. Thank you
+    for your time. I can be reached at louchang@loustack.dev.
+closing: Sincerely,
