@@ -15,7 +15,7 @@ Positioning:
 
 Format:
 - Duotify was project-based consulting, so list selected, separate client systems under one scope line. Each bullet is `label - text`: the label names the system, the text gives context, scale, then impact.
-- Font is Helvetica Neue only. `--input font=...` exists for layout checks on machines without it; never commit a PDF built with another font.
+- Font is Helvetica Neue only. No substitutes, and never commit a PDF built with another font.
 - Contact email is louchang@loustack.dev. The phone number is off by default because this repo is public.
 
 Verified facts (from Lou):
@@ -32,8 +32,8 @@ Truth policy:
 
 File roles:
 - Edit `payloads/<target>.yaml` for content and `metadata.toml` for shared header/education. `modules/resume.typ` and `modules/styles.typ` hold the layout.
-- The other files in `modules/` (`header`, `highlights`, `professional`, `projects`, `skills`, `education`, `certificates`, `publications`) are legacy and not rendered. Do not use them as a source of facts.
-- Use `Resume_Markdown 2025.md` and `Resume_fullstack_markdown.md` only as supporting reference.
+- Retired modules and their old wording live in `archive/legacy-modules/` as reference only. Do not use them as a source of facts.
+- `archive/` holds retired modules and the previous resumes (LaTeX, Markdown, devops/fullstack PDFs). Reference only; do not edit.
 - Treat `README.md` as GitHub profile content, not resume content.
 - Do not edit `resume.pdf` directly.
 
