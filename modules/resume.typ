@@ -7,11 +7,11 @@
     #h(5pt)
     #text(size: 32pt, weight: "light", fill: muted)[#shared.at("name").at("last")]
   ]
-  v(0pt)
+  v(6pt)
   align(center, text(size: 10.6pt, weight: "medium", fill: navy, target.at("headline")))
-  v(2pt)
+  v(5pt)
   align(center, text(size: 9.6pt, weight: "light", fill: muted, shared.at("location")))
-  v(2pt)
+  v(5pt)
 
   // Phone is optional: set `phone` under [shared.contact] in metadata.toml to show it.
   let items = (("Email", link("mailto:" + contact.at("email"), contact.at("email"))),)
@@ -32,10 +32,10 @@
 #let render-experience(target) = {
   section-title("Experience")
   for item in target.at("experience") {
-    v(3pt)
+    v(6pt)
     entry-header(item.at("title"), item.at("company"), item.at("date"), item.at("location"))
     // One line of scope for roles that cover many unrelated client systems.
-    if "intro" in item { par(item.at("intro")) }
+    if "intro" in item { par(item.at("intro")); v(3pt) }
     list(..item.at("bullets").map(b => labeled-bullet(b.at("label"), b.at("text"))))
   }
 }
@@ -45,6 +45,7 @@
     section-title("Selected Project")
     for p in target.at("projects") {
       text(size: 10.7pt, weight: "bold")[#p.at("title") | #p.at("subtitle")]
+      v(2pt)
       par(p.at("text"))
     }
   }
@@ -53,8 +54,8 @@
 #let render-education(shared) = {
   section-title("Education & Certification")
   for item in shared.at("education") {
-    v(1pt)
-    entry-header(item.at("school"), item.at("credential"), item.at("date"), item.at("location"))
+    v(3pt)
+    entry-header(item.at("school"), item.at("credential"), item.at("date"), item.at("location"), after: 1pt)
   }
 }
 
@@ -62,6 +63,7 @@
   section-title("Technologies")
   for item in target.at("skills") {
     tech-row(item.at("category"), item.at("items"))
+    v(2pt)
   }
 }
 

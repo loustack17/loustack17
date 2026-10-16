@@ -5,23 +5,23 @@
 #let muted = rgb("#697482")
 
 #let section-title(title) = {
-  v(7pt)
+  v(9pt)
   text(size: 15.5pt, weight: "bold", fill: navy, title)
-  v(-3.5pt)
-  line(length: 100%, stroke: 0.5pt + rgb("#D7DEE8"))
   v(3pt)
+  line(length: 100%, stroke: 0.5pt + rgb("#D7DEE8"))
+  v(5pt)
 }
 
 // Title + location on the first row, organisation/credential + date on the second.
-#let entry-header(title, sub, date, location, title-size: 10.8pt) = {
+#let entry-header(title, sub, date, location, title-size: 10.8pt, after: 3pt) = {
   grid(
     columns: (1fr, auto),
-    row-gutter: 3pt,
+    row-gutter: 2pt,
     align: (left, right),
     text(size: title-size, weight: "bold", title), text(size: 9.5pt, weight: "light", location),
     text(size: 9.5pt, weight: "light", fill: muted, sub), text(size: 9.5pt, weight: "medium", fill: muted, date),
   )
-  v(-1pt)
+  v(after)
 }
 
 // "Label - text" bullet. The label carries the context, the text carries scale and impact.
